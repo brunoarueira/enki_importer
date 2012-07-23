@@ -30,7 +30,7 @@ module Enki
           comments.each do |comment|
             comments_founded = ::Comment.where("author_email = '#{comment['author_email']}' and body = ?", CGI::unescapeHTML(comment['body']))
 
-            if comments_founded.nil? then
+            if comments_founded.empty? then
               begin
                 puts "Comment is importing: #{comment['post_id']} = #{comment['author']}"
 
