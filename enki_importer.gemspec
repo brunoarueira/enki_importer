@@ -4,7 +4,7 @@ require File.expand_path('../lib/enki_importer/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Bruno Arueira"]
   gem.email         = ["contato@brunoarueira.com"]
-  gem.description   = "Enki Importer Data from Wordpress"
+  gem.description   = "Enki Importer, import data from Wordpress"
   gem.summary       = "Import data from Wordpress xml to enki"
   gem.homepage      = "https://github.com/brunoarueira/enki_importer"
 
