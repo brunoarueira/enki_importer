@@ -1,6 +1,6 @@
 # Enki::Importer
 
-TODO: Write a gem description
+Import data from Wordpress XML dowloaded.
 
 ## Installation
 
