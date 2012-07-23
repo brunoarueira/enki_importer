@@ -27,7 +27,7 @@ module Enki
 
             if pages_founded.nil? then
               begin
-                puts "Page is importing: #{page.title}"
+                puts "Page is importing: #{page['title']}"
 
                 ::Page.create!(page)
               rescue Exception => e
@@ -45,7 +45,7 @@ module Enki
             library = {}
 
             library["title"] = "title"
-            library["content:encoded"] = "body_html"
+            library["content:encoded"] = "body"
             library["wp:post_name"] = "slug"
             library["wp:post_date"] = "created_at"
 
