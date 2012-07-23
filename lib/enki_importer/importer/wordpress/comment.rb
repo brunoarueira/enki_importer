@@ -28,7 +28,7 @@ module Enki
           end
 
           comments.each do |comment|
-            comments_founded = ::Comment.where("author_email = #{comment['author_email']} and body = #{CGI::unescapeHTML(comment['body'])}")
+            comments_founded = ::Comment.where("author_email = '#{comment['author_email']}' and body = ?", CGI::unescapeHTML(comment['body']))
 
             if comments_founded.nil? then
               begin
