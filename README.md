@@ -20,6 +20,10 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## Todo
+
+Put tests (specs, test unit or whatever)
+
 ## Contributing
 
 1. Fork it
